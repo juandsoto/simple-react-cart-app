@@ -6,8 +6,6 @@ import Basket from './Components/Basket';
 import Header from './Components/Header';
 import Products from './Components/Products';
 
-import './App.css';
-
 function App() {
   const [cartItems, setCartItems] = useState([]);
 
@@ -44,7 +42,7 @@ function App() {
   };
 
   return (
-    <div className='App'>
+    <>
       <Header itemsQty={cartItems.reduce((acc, item) => acc + item.qty, 0)} />
       <div className='m-4'>
         <div className='row'>
@@ -61,7 +59,7 @@ function App() {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 

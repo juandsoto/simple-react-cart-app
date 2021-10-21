@@ -5,7 +5,7 @@ function Basket({ cartItems, onAdd, onRemove, onClear }) {
 
   if (cartItems.length === 0) {
     return (
-      <aside>
+      <aside className='cart'>
         <h2 className='bg-black p-2'>Cart Items</h2>
         <h4 className='text-danger'>cart is empty </h4>
       </aside>
